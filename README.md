@@ -1,6 +1,6 @@
-# Harjoitustyön otsikko on tässä
+# Harjoitustyön
 
-## Alustava suunnitelma:
+## Laskarit 1
 
-1. Keksi aihe
-2. Toteuta ohjelma
+[gitlog.txt](https://github.com/leevilep/ot-harjoitustyo/blob/master/laskarit/viikko1/gitlog.txt)
+[komentorivi.txt](https://github.com/leevilep/ot-harjoitustyo/blob/master/laskarit/viikko1/komentorivi.txt)
