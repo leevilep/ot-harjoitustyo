@@ -6,4 +6,3 @@
 
 [komentorivi.txt](https://github.com/leevilep/ot-harjoitustyo/blob/master/laskarit/viikko1/komentorivi.txt)
 
-RUMA RIVI
