@@ -6,3 +6,6 @@
 
 [komentorivi.txt](https://github.com/leevilep/ot-harjoitustyo/blob/master/laskarit/viikko1/komentorivi.txt)
 
+## Laskarit 2
+
+[täällä](https://github.com/leevilep/ot-harjoitustyo/blob/master/laskarit/viikko2)
