@@ -1,0 +1,12 @@
+**Huomioita toisen viikon laskareista**
+
+*Osa 1*
+
+maksukortti:
+    -Jos kortin arvoksi asetetaan kokonaisluku, se muuttuu liukuluvuksi operaatiossa liukuluvun kanssa (esim. syo_edullisesti()) mutta pysyy kokonaislukuna operaatiossa kokonaisluvun kanssa (esim. syo_maukkaasti()). Testien tekeminen on tällöin hankalaa, kun pitää erikseen miettiä onko str(self) paluuarvossa kortin arvo kokonaislukuna vai desimaalilukuna. Kannattaneekin operoida kortin arvoa pelkästään liukuluvuilla.
+
+*Osa 2*
+
+unicafe:
+    -Jos Maksukortti-olion saldo on vaikkapa 2.4999, niin __str__-metodi palauttaa "2.5" vaikka saldo ei oikeasti riitä edulliseen lounaaseen
+    -Ainakin minulla .pytest_cache-hakemistoon oli luotu .gitignore automaattisesti

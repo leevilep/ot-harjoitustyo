@@ -1,0 +1,2 @@
+# Tata ei oikeasti tarvita, pytest ainakin minulla hoisi automaattisesti .pytest_cache-hakemistoon sivuuttamisen hoitavan .gitignore-tiedoston
+/laskarit/viikko2/unicafe/.pytest_cache
