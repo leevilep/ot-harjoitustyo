@@ -10,4 +10,4 @@
 
 [täällä](https://github.com/leevilep/ot-harjoitustyo/blob/master/laskarit/viikko2)
 
-[Vaatimusmäärittely](https://github.com/leevilep/ot-harjoitustyo/blob/master/brain_test), palautettu myöhässä
+[Vaatimusmäärittely](https://github.com/leevilep/ot-harjoitustyo/blob/master/brain_test/doc/vaatimusmaarittelu.md), palautettu myöhässä
