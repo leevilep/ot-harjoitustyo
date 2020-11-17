@@ -1,8 +1,9 @@
 # Harjoitustyö
-[Linkki harjoitustyön hakemistoon](https://github.com/leevilep/ot-harjoitustyo/blob/master/brain_test/). En tiedä pitäisikö projektin sitten olla ihan tässä juuressa mutta nyt kuitenkin näin. 
+[Linkki harjoitustyön hakemistoon](https://github.com/leevilep/ot-harjoitustyo/blob/master/brain_test/). En tiedä pitäisikö projektin sitten olla ihan tässä juuressa mutta nyt kuitenkin näin. Olen harjoitustyön suhteen jäljessä tällä hetkellä, mutta aion ottaa kiinni.
 
 ### Dokumentaatio
 [Vaatimusmäärittely](https://github.com/leevilep/ot-harjoitustyo/blob/master/brain_test/doc/vaatimusmaarittelu.md)
+
 [Tuntikirjanpito](https://github.com/leevilep/ot-harjoitustyo/blob/master/brain_test/doc/tuntikirjanpito.md)
 
 ## Laskarit 1
