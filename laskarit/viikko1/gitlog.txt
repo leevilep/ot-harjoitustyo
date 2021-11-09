@@ -1,3 +1,5 @@
+Muutos konfliktin harjoittelua varten
+
 commit 39200acf47a2b77e0505a79923fe966f96f1e320
 Author: Leevi Leppänen <leevi.leppanen@helsinki.fi>
 Date:   Tue Nov 9 18:47:09 2021 +0200
