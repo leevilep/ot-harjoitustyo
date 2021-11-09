@@ -1,9 +1,8 @@
-# Harjoitustyö
+# Ohjelmistotekniikka, harjoitustyö
 
-Tämä ei ole vielä ihan kunnollinen README.md harjoitustyölle vaan olemassa toistaiseksi *markdown*-notaation harjoittelua varten.
+## Tehtävät
 
-Tässä pitäisi olla järjestetty lista:
+### Viikko 1
 
-1. Beta
-1. Alpha
-1. **Baccsu**
+[gitlog.txt](laskarit/viikko1/gitlog.txt)
+[komentorivi.txt](laskarit/viikko1/komentorivi.txt)
