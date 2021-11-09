@@ -11,4 +11,4 @@
 
 Ylimääräinen rivi tekstiä tehtävää varten
 
-Tämä on muutos, jota en pushaa GitHubiin
+Tämä on muutos konfliktin harjoittelua varten
