@@ -8,3 +8,5 @@
 
 [komentorivi.txt](laskarit/viikko1/komentorivi.txt)
 (valitettavasti ilman rivinvaihtoja, sillä kopioitu Windowsin leikepöydän kautta)
+
+Ylimääräinen rivi tekstiä tehtävää varten
