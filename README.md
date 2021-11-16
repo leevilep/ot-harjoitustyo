@@ -1,6 +1,6 @@
 # Ohjelmistotekniikka
 
-## Harjoitustyö
+## Harjoitustyö – Yatzy
 
 [Vaatimusmäärittely](dokumentaatio/vaatimusmaarittely.md)
 
