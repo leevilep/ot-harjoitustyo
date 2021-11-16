@@ -14,9 +14,9 @@ Sovelluksessa on vähintään tekstikäyttöliittymä, jossa
 - pelin aloitus tai jatkaminen
 - noppien heittäminen ja niiden silmäluvut
 - pöytäkirja ja siihen merkityt tulokset
- - mahdollisesti myös näkyville pisteet, jotka pelaaja saisi silmäluvuillaan kustakin käyttämättömästä yhdistelmästä
+  - mahdollisesti myös näkyville pisteet, jotka pelaaja saisi silmäluvuillaan kustakin käyttämättömästä yhdistelmästä
 - pelin lopetuksen käsittely
- - mahdollisesti myös pelin lopputuloksen tallennus
+  - mahdollisesti myös pelin lopputuloksen tallennus
 - mahdollisesti kirjautuminen jos käyttäjätilit toteutetaan
 
 ## Jatkokehitysideoita
