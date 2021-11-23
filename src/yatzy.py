@@ -3,8 +3,8 @@ from scorecolumn import ScoreColumn
 
 def play():
     dice = Dice()
-    player1 = ScoreColumn("player1")
-    player2 = ScoreColumn("player2")
+    player1 = ScoreColumn(input("Player\'s name: "))
+    player2 = ScoreColumn(input("Other player's name: "))
     player1s_turn = True
     while not (player1.is_full() and player2.is_full()):
         if player1s_turn:
@@ -62,6 +62,8 @@ def play():
             player.check_yatzy(dice.get(), write = True)
         else:
             print("Something went terribly wrong, scorebox index out of range")
+        print(player)
+        input("Press enter to swap turn...")
     if player1.get_total() > player2.get_total:
         print(player1.name, "won!")
     elif player2.get_total() > player1.get_total:
