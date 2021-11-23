@@ -26,3 +26,7 @@ Tämä on muutos konfliktin harjoittelua varten
 [unicafe](laskarit/viikko2/unicafe)
 
 ![coverage screenshot](laskarit/viikko2/coverage.png)
+
+### Viikko 3
+
+En kerennyt tehtäviä mutta harjoitustyötä tein
