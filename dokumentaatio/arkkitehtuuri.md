@@ -1,0 +1,1 @@
+![kaavio][kaavio.jpg]
