@@ -1,6 +1,7 @@
 from dice import Dice
 from scorecolumn import ScoreColumn
 
+
 def play():
     dice = Dice()
     player1 = ScoreColumn(input("Player\'s name: "))
@@ -18,7 +19,8 @@ def play():
         print(player.name, "rolled:")
         print(dice)
         while True:
-            to_reroll = input("Which dice you want to reroll? (give indices separated by spaces): ").split(" ")
+            to_reroll = input(
+                "Which dice you want to reroll? (give indices separated by spaces): ").split(" ")
             try:
                 for i, s in enumerate(to_reroll):
                     to_reroll[i] = int(s)
@@ -29,7 +31,8 @@ def play():
         dice.reroll(to_reroll)
         print(player.name, "re-rolled:")
         print(dice)
-        scorebox_str = input("Choose score box to use the rolled dice (1-15): ")
+        scorebox_str = input(
+            "Choose score box to use the rolled dice (1-15): ")
         while True:
             try:
                 scorebox = int(scorebox_str)
@@ -41,25 +44,25 @@ def play():
                 print("Error with choosing score box, try again")
                 print(e)
         if 1 <= scorebox <= 6:
-            player.check_upper(scorebox, dice.get(), write = True)
+            player.check_upper(scorebox, dice.get(), write=True)
         elif scorebox == 7:
-            player.check_one_pair(dice.get(), write = True)
+            player.check_one_pair(dice.get(), write=True)
         elif scorebox == 8:
-            player.check_two_pairs(dice.get(), write = True)
+            player.check_two_pairs(dice.get(), write=True)
         elif scorebox == 9:
-            player.check_three_of_a_kind(dice.get(), write = True)
+            player.check_three_of_a_kind(dice.get(), write=True)
         elif scorebox == 10:
-            player.check_four_of_a_kind(dice.get(), write = True)
+            player.check_four_of_a_kind(dice.get(), write=True)
         elif scorebox == 11:
-            player.check_small_straight(dice.get(), write = True)
+            player.check_small_straight(dice.get(), write=True)
         elif scorebox == 12:
-            player.check_large_straight(dice.get(), write = True)
+            player.check_large_straight(dice.get(), write=True)
         elif scorebox == 13:
-            player.check_full_house(dice.get(), write = True)
+            player.check_full_house(dice.get(), write=True)
         elif scorebox == 14:
-            player.check_chance(dice.get(), write = True)
+            player.check_chance(dice.get(), write=True)
         elif scorebox == 15:
-            player.check_yatzy(dice.get(), write = True)
+            player.check_yatzy(dice.get(), write=True)
         else:
             print("Something went terribly wrong, scorebox index out of range")
         print(player)
@@ -75,6 +78,3 @@ def play():
         again = input("Play again? [y/n]: ")
     if again == "y":
         play()
-    
-
-        

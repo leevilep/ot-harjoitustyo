@@ -2,7 +2,8 @@ class ScoreColumn:
     def __init__(self, player_name: str):
         self.name = player_name
         # upper
-        self.upper = [None, None, None, None, None, None] # [ones, twos, threes, ...]
+        # [ones, twos, threes, ...]
+        self.upper = [None, None, None, None, None, None]
         self.upper_sum = 0
         self.bonus = 0
         # lower
@@ -21,7 +22,7 @@ class ScoreColumn:
         for i in range(6):
             s += "[" + str(i+1) + "]s : " + str(self.upper[i]) + "\n"
         s += "Sum: " + str(self.upper_sum) + "\n"
-        s += "Bonus (Sum >= 63 required): " + str(self.check_bonus())  + "\n"
+        s += "Bonus (Sum >= 63 required): " + str(self.check_bonus()) + "\n"
         s += "[7] One Pair: " + str(self.one_pair) + "\n"
         s += "[8] Two Pairs: " + str(self.two_pairs) + "\n"
         s += "[9] Three of a Kind: " + str(self.three_of_a_kind) + "\n"
@@ -34,8 +35,8 @@ class ScoreColumn:
         s += "Total: " + str(self.get_total()) + "\n"
         return s
 
-    def check_upper(self, number: int, dice: list, write = False):
-        if self.upper[number-1] != None:
+    def check_upper(self, number: int, dice: list, write=False):
+        if self.upper[number-1] is not None:
             return None
         score = 0
         for d in dice:
@@ -54,10 +55,10 @@ class ScoreColumn:
             return 50
         return 0
 
-    def check_one_pair(self, dice: list, write = False):
-        if self.one_pair != None:
+    def check_one_pair(self, dice: list, write=False):
+        if self.one_pair is not None:
             return None
-        count = [0,0,0,0,0,0] # counts how many of each dice
+        count = [0, 0, 0, 0, 0, 0]  # counts how many of each dice
         for d in dice:
             count[d-1] += 1
         largest = 0
@@ -70,14 +71,14 @@ class ScoreColumn:
             result = 0
         else:
             result = 2*(largest_index+1)
-        if write: 
+        if write:
             self.one_pair = result
         return result
 
-    def check_two_pairs(self, dice: list, write = False):
-        if self.two_pairs != None:
+    def check_two_pairs(self, dice: list, write=False):
+        if self.two_pairs is not None:
             return None
-        count = [0,0,0,0,0,0] # counts how many of each dice
+        count = [0, 0, 0, 0, 0, 0]  # counts how many of each dice
         for d in dice:
             count[d-1] += 1
         largest1 = 0
@@ -100,10 +101,10 @@ class ScoreColumn:
             self.two_pairs = result
         return result
 
-    def check_three_of_a_kind(self, dice: list, write = False):
-        if self.three_of_a_kind != None:
+    def check_three_of_a_kind(self, dice: list, write=False):
+        if self.three_of_a_kind is not None:
             return None
-        count = [0,0,0,0,0,0] # counts how many of each dice
+        count = [0, 0, 0, 0, 0, 0]  # counts how many of each dice
         for d in dice:
             count[d-1] += 1
         largest = 0
@@ -116,14 +117,14 @@ class ScoreColumn:
             result = 0
         else:
             result = 3*(largest_index+1)
-        if write: 
+        if write:
             self.three_of_a_kind = result
         return result
 
-    def check_four_of_a_kind(self, dice: list, write = False):
-        if self.four_of_a_kind != None:
+    def check_four_of_a_kind(self, dice: list, write=False):
+        if self.four_of_a_kind is not None:
             return None
-        count = [0,0,0,0,0,0] # counts how many of each dice
+        count = [0, 0, 0, 0, 0, 0]  # counts how many of each dice
         for d in dice:
             count[d-1] += 1
         largest = 0
@@ -136,14 +137,14 @@ class ScoreColumn:
             result = 0
         else:
             result = 4*(largest_index+1)
-        if write: 
+        if write:
             self.four_of_a_kind = result
         return result
 
-    def check_small_straight(self, dice: list, write = False):
-        if self.small_straight != None:
+    def check_small_straight(self, dice: list, write=False):
+        if self.small_straight is not None:
             return None
-        if sorted(dice) == [1,2,3,4,5]:
+        if sorted(dice) == [1, 2, 3, 4, 5]:
             result = 15
         else:
             result = 0
@@ -151,10 +152,10 @@ class ScoreColumn:
             self.small_straight = result
         return result
 
-    def check_large_straight(self, dice: list, write = False):
-        if self.large_straight != None:
+    def check_large_straight(self, dice: list, write=False):
+        if self.large_straight is not None:
             return None
-        if sorted(dice) == [2,3,4,5,6]:
+        if sorted(dice) == [2, 3, 4, 5, 6]:
             result = 20
         else:
             result = 0
@@ -162,10 +163,10 @@ class ScoreColumn:
             self.small_straight = result
         return result
 
-    def check_full_house(self, dice: list, write = False):
-        if self.full_house != None:
+    def check_full_house(self, dice: list, write=False):
+        if self.full_house is not None:
             return None
-        count = [0,0,0,0,0,0] # counts how many of each dice
+        count = [0, 0, 0, 0, 0, 0]  # counts how many of each dice
         for d in dice:
             count[d-1] += 1
         has_triple = False
@@ -187,19 +188,19 @@ class ScoreColumn:
         if write:
             self.full_house = result
         return result
-        
-    def check_chance(self, dice: list, write = False):
-        if self.chance != None:
+
+    def check_chance(self, dice: list, write=False):
+        if self.chance is not None:
             return None
         if write:
             self.chance = sum(dice)
         return sum(dice)
 
-    def check_yatzy(self, dice: list, write = False):
-        if self.yatzy != None:
+    def check_yatzy(self, dice: list, write=False):
+        if self.yatzy is not None:
             return None
         yatzy = True
-        for i in range(1,5):
+        for i in range(1, 5):
             if dice[i] != dice[i-1]:
                 yatzy = False
                 break
@@ -210,28 +211,28 @@ class ScoreColumn:
         if write:
             self.yatzy = result
         return result
-        
+
     def get_total(self):
         total = self.upper_sum
         total += self.check_bonus()
         for score in (self.one_pair, self.two_pairs, self.three_of_a_kind,
-                        self.four_of_a_kind, self.small_straight,
-                        self.large_straight, self.full_house,
-                        self.chance, self.yatzy):
+                      self.four_of_a_kind, self.small_straight,
+                      self.large_straight, self.full_house,
+                      self.chance, self.yatzy):
             if score == None:
                 total += 0
             else:
                 total += score
         return total
-    
+
     def is_full(self):
         for score in self.upper:
-            if score == None:
+            if score is None:
                 return False
         for score in (self.one_pair, self.two_pairs, self.three_of_a_kind,
-                        self.four_of_a_kind, self.small_straight,
-                        self.large_straight, self.full_house,
-                        self.chance, self.yatzy):
-            if score == None:
+                      self.four_of_a_kind, self.small_straight,
+                      self.large_straight, self.full_house,
+                      self.chance, self.yatzy):
+            if score is None:
                 return False
         return True
