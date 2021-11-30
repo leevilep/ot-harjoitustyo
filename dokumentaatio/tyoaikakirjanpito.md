@@ -4,5 +4,5 @@
 |:-------|:--------:|:------------|
 | 16.11. | 3        | alustava vaatimusmäärittely, hakemistorakenne |
 | 23.11. | 7        | poetryn asentaminen projektiin, koodin runkoa |
-| 30.11. | 6        | pylint, testejä, arkkitehtuurikuvaus, koodia  |
+| 30.11. | 6        | pylint, testejä, arkkitehtuurikuvaus |
 | summa  | 16       | |
